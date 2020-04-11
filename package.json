@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build test-lib && ng build web-app",
+    "build:prod": "ng build test-lib --prod && ng build web-app --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

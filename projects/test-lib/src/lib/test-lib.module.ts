@@ -9,15 +9,16 @@ export function SettingFactory() {
   return TestLibModule.settings;
 }
 
+// @dynamic
 @NgModule({
   declarations: [TestLibComponent],
   imports: [CommonModule, TestLibRoutingModule],
   providers: [
     {
       provide: TEST_LIB_CONFIG,
-      useFactory: SettingFactory
-    }
-  ]
+      useFactory: SettingFactory,
+    },
+  ],
 })
 export class TestLibModule {
   static settings: TestLibConfig;
